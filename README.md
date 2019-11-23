@@ -9,6 +9,7 @@ Population Synthesis Dataset
 ----------
 ## .par files
 .par files are Tempo(2)-compatible and contain the following parameters:
+
 * **PSRJ :** j-name from RA & Dec, includes arcseconds in case coincident pulsars
 * **RAJ** 
 * **DECJ**
@@ -52,10 +53,10 @@ timed reliably:
     * **rn_amp :** red noise pwr spec amplitude in us yr^1/2 (see Cordes & Shannon, 2010)
     * **rn_index :** red noise pwr spectral index (see NG 9-yr timing)
 
+
 ----------------
 ### ASCII Header
 Timing Parameters
-
         * **t_int :** integration time per epoch (s)
         * **nus :** frequency range of instrument(s) (GHz)
 	* **ctrfreq :** center of instrument frequency range (GHz)
