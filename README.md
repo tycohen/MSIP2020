@@ -50,12 +50,11 @@ timed reliably:
 * **sigma_toa :** total TOA uncertainty quad sum of sigma_w, sigma_dm, sigma_tel in us (see Lam et al., 2018)
 * **sigma_tel :** telescope noise us (RFI, gain cal, polarization)
 * **sigma_dm :** DM estimation uncertainty in us
-* **sigma_w :** white noise errors in us
+* **sigma_w :** white noise errors in us (quad sum of radiometer, jitter, scintillation error)
 * **sigma_j :** jitter noise in us (see t_int in header to scale)
 * **rn_amp :** red noise pwr spec amplitude in us yr^1/2 (see Cordes & Shannon, 2010)
 * **rn_index :** red noise pwr spectral index (see NG 9-yr timing)
 
-----------------
 ### ASCII Header
 Timing Parameters
 
