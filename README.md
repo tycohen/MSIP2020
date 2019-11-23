@@ -4,11 +4,12 @@ Population Synthesis Dataset
 
 .par files and RMS noise estimates for a simulated galactic population of MSPs observed with a variety of instrument configurations. A description of the population generation is at http://www.aoc.nrao.edu/~tcohen/research/popsynth.shtml.
 
-.par files and ASCII files are located in the data/ directory. The population is split into "include" and "exclude" where excluded MSPs have RMS values that are similar to real NANOGrav RMSs at their respective telescopes and included MSPs should be added to the PTA in the future.
+.par files and ASCII files are located in the *data/* directory. The population is split into "include" and "exclude" where excluded MSPs have RMS values that are similar to real NANOGrav RMSs at their respective telescopes and included MSPs should be added to the PTA in the future.
 
 ----------
 ## .par files
 .par files are Tempo(2)-compatible and contain the following parameters:
+
 * **PSRJ :** j-name from RA & Dec, includes arcseconds in case coincident pulsars
 * **RAJ** 
 * **DECJ**
@@ -25,6 +26,7 @@ All parameters are set to fit.
 -----------
 ## ASCII files
 The ASCII files contain simulated attributes (some of this is redundant with the .par files) of the MSPs and RMS components computed for a specific intstrument configuration. Details about the instrument configuration and underlying population distribution are located in the file header. Pulsars are sorted by the total TOA uncertainty. If all you want is the noise parameters, just grab columns 18-24. The columns of the ASCII files are:
+
     * **Name :** jname of pulsar
     * **Period_ms :** pulse period in ms
     * **Pdot :** period derivative (s s^-1)
@@ -44,6 +46,7 @@ The ASCII files contain simulated attributes (some of this is redundant with the
 Noise parameters are set to -2 if the pulsar is outside of the telescope
 declination limits and -1 if the pulsar is too dim or smeared out to be
 timed reliably:
+
     * **sigma_toa :** total TOA uncertainty quad sum of sigma_w, sigma_dm, sigma_tel in us (see Lam et al., 2018)
     * **sigma_tel :** telescope noise us (RFI, gain cal, polarization)
     * **sigma_dm :** DM estimation uncertainty in us
@@ -51,6 +54,7 @@ timed reliably:
     * **sigma_j :** jitter noise in us (see t_int in header to scale)
     * **rn_amp :** red noise pwr spec amplitude in us yr^1/2 (see Cordes & Shannon, 2010)
     * **rn_index :** red noise pwr spectral index (see NG 9-yr timing)
+
 
 ----------------
 ### ASCII Header
