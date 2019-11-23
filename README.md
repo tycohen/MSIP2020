@@ -55,7 +55,6 @@ timed reliably:
     * **rn_amp :** red noise pwr spec amplitude in us yr^1/2 (see Cordes & Shannon, 2010)
     * **rn_index :** red noise pwr spectral index (see NG 9-yr timing)
 
-
 ----------------
 ### ASCII Header
 Timing Parameters
